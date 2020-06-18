@@ -1,0 +1,10 @@
+import json
+
+with open('feeds.json') as json_data:
+    jsonData =json.load(json_data)
+
+for i in jsonData:
+    print('\n')
+    print(i['date'])
+    print('\t')
+    print(i['heading'])
